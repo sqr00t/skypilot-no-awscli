@@ -204,7 +204,7 @@ aws_dependencies = [
     # NOTE: this installs CLI V1. To use AWS SSO (e.g., `aws sso login`), users
     # should instead use CLI V2 which is not pip-installable. See
     # https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html.
-    'awscli>=1.27.10',
+    #'awscli>=1.27.10', # Besides from benchmarking utils and fetching session tokens with aws sts (which can be implemented differently, there's no use for awscli
     'botocore>=1.29.10',
     'boto3>=1.26.1',
 ]
